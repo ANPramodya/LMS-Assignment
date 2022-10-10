@@ -1,0 +1,62 @@
+.topnav {
+  height: 50px;
+  border-bottom: 0.5px solid #a1a1a1;
+  display: flex;
+  align-items: center;
+
+  .topnavContainer {
+    display: flex;
+    align-items: center;
+
+    .searchbar {
+      position: fixed;
+      left: 150px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      input {
+        border: none;
+        border-radius: 20px;
+        height: 30px;
+        width: 400px;
+        background: #dfdfdf;
+        padding-left: 30px;
+        font-size: 15px;
+        font-weight: 500;
+      }
+
+      .searchIcon {
+        color: #a1a1a1;
+        font-size: 25px;
+        margin-left: 10px;
+        margin-right: 20px;
+
+        &:hover {
+          color: white;
+          cursor: pointer;
+        }
+      }
+    }
+    .right {
+      display: flex;
+      position: fixed;
+      right: 15px;
+      .userEmail {
+        margin-right: 20px;
+        color: #a1a1a1;
+      }
+
+      .rightIcon {
+        margin: 0px 10px;
+        font-size: 25px;
+        color: #a1a1a1;
+
+        &:hover {
+          cursor: pointer;
+          color: white;
+        }
+      }
+    }
+  }
+}

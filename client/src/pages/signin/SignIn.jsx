@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import { ConstantColors } from "../constants/colors";
 import { NavLink } from "react-router-dom";
 
 function SignIn() {
