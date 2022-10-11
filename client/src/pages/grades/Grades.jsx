@@ -2,6 +2,7 @@ import React from "react";
 import "./grades.scss";
 import SideNav from "../../components/sidenav/SideNav";
 import TopNav from "../../components/topnav/TopNav";
+import List from "../../components/list/List";
 
 const Grades = () => {
   return (
@@ -9,7 +10,10 @@ const Grades = () => {
       <SideNav />
       <div className="gradesContainer">
         <TopNav />
-        Grades
+        <div className="title">Grades</div>
+        <div className="table">
+          <List />
+        </div>
       </div>
     </div>
   );

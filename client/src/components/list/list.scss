@@ -1,0 +1,31 @@
+.list {
+  margin-right: 20px;
+  margin-top: 10px;
+  margin-left: 20px;
+
+  .table {
+    background-color: #a1a1a1;
+    padding: 0;
+    .tableHead {
+      background-color: #262837;
+      .tableHeadRow {
+        .tableCell {
+          color: white;
+          font-size: 20px;
+        }
+      }
+    }
+    .tableBody {
+      .tableRow {
+        cursor: pointer;
+        &:hover {
+          background-color: #333645;
+        }
+        .tableCell {
+          font-size: 18px;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}

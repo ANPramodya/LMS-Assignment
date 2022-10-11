@@ -15,7 +15,7 @@ function SideNav() {
           <span className="logo">Sparkle</span>
         </Link>
       </div>
-      <hr />
+
       <div className="center">
         <ul>
           <Link to={"/dashboard"} style={{ color: "#a1a1a1" }}>

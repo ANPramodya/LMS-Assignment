@@ -1,0 +1,47 @@
+.card {
+  height: 320px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 30px;
+  background-color: #262837;
+
+  cursor: pointer;
+  &:hover {
+    background-color: #181922;
+    box-shadow: 7px 8px 13px 1px rgba(0, 166, 189, 0.68);
+    -webkit-box-shadow: 7px 8px 13px 1px rgba(0, 166, 189, 0.68);
+    -moz-box-shadow: 7px 8px 13px 1px rgba(0, 166, 189, 0.68);
+    transition: 500ms;
+    .bottom {
+      background-color: #262837;
+    }
+  }
+
+  .image {
+    .courseImage {
+      padding: 10px;
+      object-fit: cover;
+      height: 250px;
+      width: 350px;
+      object-fit: cover;
+      border-radius: 30px;
+    }
+  }
+  .bottom {
+    display: flex;
+    flex-direction: column;
+    background-color: #333645;
+    padding: 2px 35px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+
+    .title {
+      font-weight: 600;
+    }
+    .year {
+      color: gray;
+    }
+  }
+}

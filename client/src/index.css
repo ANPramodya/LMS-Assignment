@@ -4,6 +4,27 @@
   box-sizing: border-box;
   font-family: "Open Sans", sans-serif;
 }
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+  scrollbar-width: auto;
+  scrollbar-color: #00a6bd #262837;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 16px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #262837;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #00a6bd;
+  border-radius: 10px;
+  border: 0px solid #ff0000;
+}
 
 h3 {
   font-weight: 500;
@@ -17,7 +38,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #262837;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 code {

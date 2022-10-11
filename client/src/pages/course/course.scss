@@ -1,7 +1,61 @@
 .course {
   display: flex;
+  background-color: #333645;
+  padding-bottom: 50px;
+
   .courseContainer {
     flex: 16;
     color: white;
+    margin-left: 70px;
+
+    .cardTitle {
+      box-shadow: 0px 1px 7px 0px rgba(0, 166, 189, 0.68);
+      -webkit-box-shadow: 0px 1px 7px 0px rgba(0, 166, 189, 0.68);
+      -moz-box-shadow: 0px 1px 7px 0px rgba(0, 166, 189, 0.68);
+      margin: 5px 10px;
+      border-radius: 10px;
+      padding: 5px 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .dashboard {
+        font-size: 30px;
+        color: lightgray;
+      }
+      .add {
+        font-size: 24px;
+        color: lightgray;
+        margin-right: 10px;
+
+        padding: 2px 15px;
+        border-radius: 10px;
+        cursor: pointer;
+        &:hover {
+          box-shadow: 0px 1px 7px 0px rgba(0, 166, 189, 0.68);
+          -webkit-box-shadow: 0px 1px 7px 0px rgba(0, 166, 189, 0.68);
+          -moz-box-shadow: 0px 1px 7px 0px rgba(0, 166, 189, 0.68);
+          transition: 400ms;
+        }
+      }
+    }
+
+    .cards {
+      margin-top: 20px;
+      margin-left: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 30px;
+
+      .up {
+        display: flex;
+        justify-content: space-around;
+      }
+      .down {
+        display: flex;
+        justify-content: space-around;
+      }
+    }
   }
 }

@@ -1,8 +1,11 @@
 .home {
   display: flex;
+  background-color: #333645;
+  height: 100vh;
 
   .homeContainer {
     flex: 16;
     color: white;
+    margin-left: 70px;
   }
 }
