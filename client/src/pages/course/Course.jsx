@@ -3,6 +3,8 @@ import "./course.scss";
 import SideNav from "../../components/sidenav/SideNav";
 import TopNav from "../../components/topnav/TopNav";
 import Card from "../../components/card/Card";
+import { Link } from "react-router-dom";
+import Enroll from "./Enroll";
 
 const Course = () => {
   //temporary data
@@ -14,7 +16,13 @@ const Course = () => {
         <TopNav />
         <div className="cardTitle">
           <span className="dashboard">Courses</span>
-          <span className="add">Add</span>
+          <Link
+            to={"/course/enroll"}
+            element={<Enroll />}
+            style={{ textDecoration: "none" }}
+          >
+            <span className="add">Enroll</span>
+          </Link>
         </div>
         <div className="cards">
           <div className="up">

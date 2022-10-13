@@ -1,0 +1,13 @@
+.enroll {
+  display: flex;
+  background-color: #333645;
+  padding-bottom: 50px;
+  height: 100vh;
+
+  .enrollContainer {
+    flex: 16;
+    color: white;
+    margin-left: 70px;
+    flex-direction: column;
+  }
+}

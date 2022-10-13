@@ -10,22 +10,32 @@ import Group from "./pages/group/Group";
 import Grades from "./pages/grades/Grades";
 import Settings from "./pages/settings/Settings";
 import Logout from "./pages/logout/Logout";
+import Enroll from "./pages/course/Enroll";
+import Single from "./pages/course/Single";
 
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
         <Routes>
-          <Route index element={<Home />} />
-          <Route path="/signin" element={<SignIn />} />
-          <Route path="/signup" element={<SignUp />} />
-          <Route path="/dashboard" element={<Home />} />
-          <Route path="/course" element={<Course />} />
-          <Route path="/calender" element={<Calender />} />
-          <Route path="/groups" element={<Group />} />
-          <Route path="/grades" element={<Grades />} />
-          <Route path="/settings" element={<Settings />} />
-          <Route path="/logout" element={<Logout />} />
+          <Route path="/">
+            <Route index element={<Home />} />
+            <Route path="/signin" element={<SignIn />} />
+            <Route path="/signup" element={<SignUp />} />
+            <Route path="/dashboard" element={<Home />} />
+
+            <Route path="/course">
+              <Route index element={<Course />} />
+              <Route path="enroll" element={<Enroll />} />
+              <Route path=":courseId" element={<Single />} />
+            </Route>
+
+            <Route path="/calender" element={<Calender />} />
+            <Route path="/groups" element={<Group />} />
+            <Route path="/grades" element={<Grades />} />
+            <Route path="/settings" element={<Settings />} />
+            <Route path="/logout" element={<Logout />} />
+          </Route>
         </Routes>
         {/* <Logo to={"/signin"}></Logo>
         <Pages /> */}
