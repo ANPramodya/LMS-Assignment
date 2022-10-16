@@ -1,7 +1,23 @@
 .group {
   display: flex;
+  background-color: #333645;
+  height: 100vh;
   .groupContainer {
     flex: 16;
     color: white;
+    margin-left: 70px;
+    .cardTitle {
+      box-shadow: 0px 1px 7px 0px rgba(0, 166, 189, 0.68);
+      -webkit-box-shadow: 0px 1px 7px 0px rgba(0, 166, 189, 0.68);
+      -moz-box-shadow: 0px 1px 7px 0px rgba(0, 166, 189, 0.68);
+      margin: 5px 10px;
+      border-radius: 10px;
+      padding: 5px 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 30px;
+      color: lightgray;
+    }
   }
 }

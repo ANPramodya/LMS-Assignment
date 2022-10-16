@@ -3,11 +3,18 @@ import "./course.scss";
 import SideNav from "../../components/sidenav/SideNav";
 import TopNav from "../../components/topnav/TopNav";
 import Card from "../../components/card/Card";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Enroll from "./Enroll";
+import Single from "./Single";
 
 const Course = () => {
   //temporary data
+
+  let navigate = useNavigate();
+  const routeChange = () => {
+    let path = "courseName";
+    navigate(path);
+  };
 
   return (
     <div className="course">
@@ -26,8 +33,12 @@ const Course = () => {
         </div>
         <div className="cards">
           <div className="up">
-            <Card course="1" />
-            <Card course="2" />
+            <div className="card" onClick={routeChange}>
+              <Card course="1" />
+            </div>
+            <div className="card" onClick={routeChange}>
+              <Card course="2" />
+            </div>
             <Card course="3" />
           </div>
           <div className="down">

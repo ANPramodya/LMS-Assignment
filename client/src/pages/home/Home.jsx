@@ -9,7 +9,9 @@ function Home() {
       <SideNav />
       <div className="homeContainer">
         <TopNav />
-        DashBoard
+        <div className="cardTitle">
+          <span className="dashboard">Dashboard</span>
+        </div>
       </div>
     </div>
   );

@@ -1,7 +1,7 @@
 import React from "react";
 import "./card.scss";
 
-const Card = ({ course }) => {
+const Card = ({ course, onClick }) => {
   let data;
 
   switch (course) {

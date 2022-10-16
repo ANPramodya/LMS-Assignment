@@ -9,7 +9,9 @@ const Group = () => {
       <SideNav />
       <div className="groupContainer">
         <TopNav />
-        Groups
+        <div className="cardTitle">
+          <span className="groupCard">Groups</span>
+        </div>
       </div>
     </div>
   );

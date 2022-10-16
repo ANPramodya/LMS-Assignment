@@ -9,7 +9,9 @@ const Calender = () => {
       <SideNav />
       <div className="calenderContainer">
         <TopNav />
-        Calender
+        <div className="cardTitle">
+          <span className="calendartitle">Calendar</span>
+        </div>
       </div>
     </div>
   );

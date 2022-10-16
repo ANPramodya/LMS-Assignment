@@ -13,6 +13,8 @@ import Logout from "./pages/logout/Logout";
 import Enroll from "./pages/course/Enroll";
 import Single from "./pages/course/Single";
 import Dashboard from "./lecturer/dashboard/Dashboard";
+import NewCourse from "./lecturer/newCourse/NewCourse";
+import Details from "./pages/course/Details";
 
 function App() {
   return (
@@ -29,6 +31,7 @@ function App() {
               <Route index element={<Course />} />
               <Route path="enroll" element={<Enroll />} />
               <Route path=":courseId" element={<Single />} />
+              <Route path="courseName" element={<Details />} />
             </Route>
 
             <Route path="/calender" element={<Calender />} />
@@ -39,6 +42,7 @@ function App() {
 
             <Route path="/lms">
               <Route index element={<Dashboard />} />
+              <Route path="new" element={<NewCourse />} />
             </Route>
           </Route>
         </Routes>
