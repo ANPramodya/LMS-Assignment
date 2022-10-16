@@ -12,6 +12,7 @@ import Settings from "./pages/settings/Settings";
 import Logout from "./pages/logout/Logout";
 import Enroll from "./pages/course/Enroll";
 import Single from "./pages/course/Single";
+import Dashboard from "./lecturer/dashboard/Dashboard";
 
 function App() {
   return (
@@ -35,6 +36,10 @@ function App() {
             <Route path="/grades" element={<Grades />} />
             <Route path="/settings" element={<Settings />} />
             <Route path="/logout" element={<Logout />} />
+
+            <Route path="/lms">
+              <Route index element={<Dashboard />} />
+            </Route>
           </Route>
         </Routes>
         {/* <Logo to={"/signin"}></Logo>

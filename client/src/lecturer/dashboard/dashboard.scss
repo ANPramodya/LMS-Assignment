@@ -1,0 +1,59 @@
+.dashboard {
+  .dashboardContainer {
+    height: 100vh;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    .top {
+      background-color: #333645;
+      display: flex;
+      flex-direction: column;
+      flex: 4;
+      overflow-x: auto;
+      overflow-y: hidden;
+      border-radius: 20px;
+      padding: 10px;
+
+      .myCourse {
+        font-size: 26px;
+        color: lightgray;
+        margin-left: 30px;
+        margin-bottom: 5px;
+      }
+      .cards {
+        display: flex;
+        flex-direction: row;
+        .card {
+          margin: 0px 10px;
+        }
+      }
+    }
+    .bottom {
+      display: flex;
+      flex: 3;
+      gap: 10px;
+      .tiletitle {
+        font-size: 20px;
+        color: lightgray;
+      }
+
+      .left {
+        display: flex;
+        justify-content: center;
+        flex: 1;
+        background-color: #333645;
+        border-radius: 20px;
+      }
+      .right {
+        display: flex;
+        justify-content: center;
+        flex: 1;
+        background-color: #333645;
+        border-radius: 20px;
+      }
+    }
+  }
+}
